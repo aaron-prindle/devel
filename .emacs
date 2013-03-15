@@ -53,7 +53,7 @@
 (global-set-key "\C-x\g" 'magit-status)
 
 ;path to where nxml is
-(set 'nxml-path (concat "~/nxml-mode/"))
+(set 'nxml-path (concat "~/.emacs.d/nxml-mode/"))
 
 (load (concat nxml-path "rng-auto.el"))
 
