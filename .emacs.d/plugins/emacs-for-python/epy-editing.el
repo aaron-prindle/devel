@@ -19,6 +19,7 @@
 
 ;; Yasnippet - force the loading of the custom version of yasnippet
 (require 'yasnippet (concat epy-install-dir "extensions/yasnippet/yasnippet"))
+(load-file (concat epy-install-dir "extensions/snippet-helpers.el"))
 
 ;; this one is to activate django snippets
 (defun epy-django-snippets ()
@@ -147,19 +148,19 @@ original" (interactive)
 ; delete seleted text when typing
 (delete-selection-mode 1)
 
-; highlight current line
-(global-hl-line-mode 1)
-(set-face-background 'hl-line "seashell2") ;; Nice color
+;; highlight current line
+;;(global-hl-line-mode 1)
+;;(set-face-background 'hl-line "seashell2") ;; Nice color
 
 ; highlight brackets
 (show-paren-mode t)
 
 ;; Highlight indentation
-(require 'highlight-indentation)
-(add-hook 'python-mode-hook 'highlight-indentation)
+;;(require 'highlight-indentation)
+;;(add-hook 'python-mode-hook 'highlight-indentation)
 
 ;; Line numbering
-(setq linum-format "%4d")
-(global-linum-mode 1)
+;;(setq linum-format "%4d")
+;;(global-linum-mode 1)
 
 (provide 'epy-editing)
